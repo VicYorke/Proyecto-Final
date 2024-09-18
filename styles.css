@@ -1,22 +1,33 @@
 *{
-    background-color: #000000;
+
     font-family: "Press Start 2P", system-ui;
     font-weight: bold;
     color: azure;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
+body {
+    background-image: url("/img/background.png");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
 
 
 .contenedor {
     display: flex;
+    background-color:black;
+    border: 40px solid;
+    border-image-source: url("/img/borderblock.png");
+    border-image-slice: 16 17 16 16;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat;
 }
 
 .header {
-    margin-top: 30px;
-    margin-left: 30px;
     height: 127px;
     width: 144px;
     background: url("/img/01header.png");
@@ -25,8 +36,7 @@
 }
 
 .logo {
-    margin-top: 50px;
-    margin-right: 30px;
+    margin-top: 25px;
     margin-left: auto;
     height: 65px;
     width: 229px;
@@ -57,6 +67,7 @@ nav {
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 ul li {
@@ -70,6 +81,7 @@ a {
 
 a:hover {
     cursor: pointer;
+    color: rgb(0, 89, 167);
 }
 
 .centrar {
@@ -78,11 +90,13 @@ a:hover {
 
 legend {
     font-size: 30px;
+    background-color: black;
 }
 
 fieldset {
     margin-top: 50px;
     margin: 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .image-border {
@@ -100,9 +114,6 @@ p {
 }
 
 
-.wrapper {
-    margin: 10px;
-}
 
 .text-image-left {
     max-width: 320px;
@@ -119,3 +130,4 @@ p {
     margin-left: 20px;
     margin-bottom: 10px;
 }
+

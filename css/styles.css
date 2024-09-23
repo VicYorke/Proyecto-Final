@@ -345,6 +345,24 @@ iframe {
     width: 80%;
 }
 
-@media (max-width: 915px) {
+.bosses-size-2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: absolute;
+}
 
+.each-boss-2 {
+    width: 80%;
+    position: absolute;
+}
+
+.prueba-div {
+    width: 16.5%;
+    height: 50px;
+    background-color: aliceblue;
+    margin-left: 20%;
+    position: relative;
 }

@@ -141,7 +141,7 @@ a:hover {
 
 /* CONTENIDO */
 
-.contenedor-legend {
+legend {
     border: 40px solid;
     background: rgba(0, 0, 0, 0.5);
     border-image-source: url("/img/borderblock.png");
@@ -152,7 +152,7 @@ a:hover {
     text-align: center;
 }
 
-.contenedor-fieldset {
+fieldset {
     border: 40px solid;
     background: rgba(0, 0, 0, 0.5);
     border-image-source: url("/img/borderblock.png");
@@ -167,7 +167,7 @@ a:hover {
 }
 
 @media (max-width: 915px) {
-    .contenedor-fieldset {
+    fieldset {
         border-image-source: none;
         border: none;
         background: none;
@@ -175,13 +175,13 @@ a:hover {
         margin-right: 13.5%;
     }
 
-    .text {
+    .text-wrap {
         margin-top: 10%;
         margin-left: 5%;
         margin-right: 5%;
     }
 
-    .contenedor-legend {
+    legend {
         width: 100%
     }
 }

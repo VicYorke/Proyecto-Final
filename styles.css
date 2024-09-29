@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url("/img/background.png");
+    background-image: url("img/background.png");
     background-size: 100%;
     background-repeat: repeat-y;
 }
@@ -26,7 +26,7 @@ body {
     flex-wrap: wrap;
     background-color:black;
     border: 40px solid;
-    border-image-source: url("/img/borderblock.png");
+    border-image-source: url("img/borderblock.png");
     border-image-slice: 16 17 16 16;
     border-image-width:20px 20px 20px 20px;
     border-image-outset: 0px 0px 0px 0px;
@@ -40,7 +40,7 @@ body {
 .header {
     height: 127px;
     width: 144px;
-    background: url("/img/01header.png");
+    background: url("img/01header.png");
     animation: header 0.8s steps(4);
     animation-delay: 1s;
 }
@@ -49,7 +49,7 @@ body {
     margin-top: 25px;
     height: 65px;
     width: 229px;
-    background: url("/img/01logoprueba.png");
+    background: url("img/01logoprueba.png");
     animation: logo 0.5s steps(5);
     animation-delay: 1s;
 }
@@ -88,7 +88,7 @@ hr {
 
     hr {
         border: 20px solid;
-        border-image-source: url("/img/borderblock.png");
+        border-image-source: url("img/borderblock.png");
         border-image-slice: 16 17 16 16;
         border-image-width:20px 20px 20px 20px;
         border-image-repeat: repeat repeat;
@@ -107,7 +107,7 @@ nav {
     justify-content: space-around;
     background: rgba(0, 0, 0, 0.5);
     border: 40px solid;
-    border-image-source: url("/img/borderblock.png");
+    border-image-source: url("img/borderblock.png");
     border-image-slice: 16 17 16 16;
     border-image-width:20px 20px 20px 20px;
     border-image-outset: 0px 0px 0px 0px;
@@ -186,7 +186,7 @@ a:hover {
 legend {
     border: 40px solid;
     background: rgba(0, 0, 0, 0.5);
-    border-image-source: url("/img/borderblock.png");
+    border-image-source: url("img/borderblock.png");
     border-image-slice: 16 17 16 16;
     border-image-width:20px 20px 20px 20px;
     border-image-outset: 0px 0px 0px 0px;
@@ -197,7 +197,7 @@ legend {
 fieldset {
     border: 40px solid;
     background: rgba(0, 0, 0, 0.5);
-    border-image-source: url("/img/borderblock.png");
+    border-image-source: url("img/borderblock.png");
     border-image-slice: 16 17 16 16;
     border-image-width:20px 20px 20px 20px;
     border-image-outset: 0px 0px 0px 0px;
@@ -396,7 +396,7 @@ iframe {
     margin-top: 2%;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     text-align: center;
     margin-left: -2%;
 }

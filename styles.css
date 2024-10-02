@@ -210,6 +210,8 @@ fieldset {
     margin-right: 10%;
 }
 
+
+
 @media (max-width: 915px) {
     fieldset {
         border-image-source: none;
@@ -219,15 +221,27 @@ fieldset {
         margin-right: 13.5%;
     }
 
+
     .text-wrap {
         margin-top: 10%;
         margin-left: 5%;
         margin-right: 5%;
     }
 
+
     legend {
         width: 100%
     }
+
+    .text img {
+        width: 80%;
+    }
+
+    p {
+        font-size: 100%;
+    }
+
+    
 }
 
 /* TEXTO */
@@ -490,7 +504,23 @@ dialog {
     max-height: 100%;
 }
 
-#modal1 img{
+#modal1 img,
+#modal2 img,
+#modal3 img,
+#modal4 img,
+#modal5 img,
+#modal6 img,
+#modal7 img,
+#modal8 img,
+#modal9 img,
+#modal10 img,
+#modal11 img,
+#modal12 img {
+    width: 100%;
+    opacity: 1;
+}
+
+.dialog-image {
     width: 100%;
     opacity: 1;
 }

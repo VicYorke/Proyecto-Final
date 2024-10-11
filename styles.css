@@ -165,19 +165,23 @@ a:hover {
 
     ul {
         justify-content: space-around;
+        margin-left: -11%;
+        margin-right: -11%;
     }
 
     nav {
-        margin-left: 13.5%;
-        margin-right: 13.5%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
     .selector1 {
-        display: none;
+        width: 5%;
+        margin-bottom: -5%;
     }
 
     .selector2 {
-        display: none;
+        width: 5%;
+        margin-bottom: -5%;
     }
 
 
@@ -539,5 +543,57 @@ dialog::backdrop {
 .boton-cerrar:hover {
     cursor: pointer;
     color: rgb(0, 89, 167);
+}
+
+/* GALERIA */
+
+.slider {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px);
+}
+
+.slider .elementos {
+    width: 400px;
+    margin-left: 10%;
+    margin-left: 10%;
+}
+
+.slider .elementos .hab {
+    width: 400px;
+}
+
+@media (max-width: 915px) {
+    .slider .elementos {
+        width: 200px;
+    }
+
+    .slider .elementos .hab {
+        width: 200px;
+    }
+
+    .slider {
+        overflow: visible;
+    }
+}
+
+@keyframes scroll {
+    0%{
+        -webkit-transform: translateX(0);
+        transorm: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(calc(-200px * 8));
+        transorm: translateX(calc(-200px * 8));
+    }
 }
 

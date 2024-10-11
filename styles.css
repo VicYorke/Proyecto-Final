@@ -580,10 +580,6 @@ dialog::backdrop {
     .slider .elementos .hab {
         width: 200px;
     }
-
-    .slider {
-        overflow: visible;
-    }
 }
 
 @keyframes scroll {

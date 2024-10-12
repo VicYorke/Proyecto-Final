@@ -545,7 +545,7 @@ dialog::backdrop {
     color: rgb(0, 89, 167);
 }
 
-/* GALERIA */
+/* HABILIDADES */
 
 .slider {
     width: 100%;
@@ -553,6 +553,12 @@ dialog::backdrop {
     margin-top: 5%;
     margin-bottom: 4%;
     overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 10% 90%,
+        transparent
+    );
 }
 
 .slider .slide-track {
@@ -560,16 +566,31 @@ dialog::backdrop {
     animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
     width: calc(200px);
+    
 }
 
 .slider .elementos {
-    width: 400px;
+    width: 300px;
     margin-left: 10%;
     margin-left: 10%;
+
 }
 
 .slider .elementos .hab {
-    width: 400px;
+    width: 300px;
+}
+
+.slider .slide-track:hover{
+    animation-play-state: paused;
+}
+
+.slider:hover .elementos .hab{
+    cursor: pointer;
+    filter: grayscale(1);
+}
+
+.slider .elementos .hab:hover{
+    filter: grayscale(0);
 }
 
 @media (max-width: 915px) {
@@ -591,5 +612,25 @@ dialog::backdrop {
         -webkit-transform: translateX(calc(-200px * 8));
         transorm: translateX(calc(-200px * 8));
     }
+}
+
+/* GALERIA */
+
+.row {
+    display: flex;
+    padding: 1%;
+    margin-top: 4%;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+    padding: 2%;
+}
+
+.column img {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 

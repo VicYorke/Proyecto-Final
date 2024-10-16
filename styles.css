@@ -647,12 +647,55 @@ form {
 }
 
 input {
-    color: #000;
+    color: rgb(0, 89, 167);
     margin-bottom: 4%;
     margin-top: 2%;
     width: 50%;
     font-size: 20px;
+    text-align: center;
+    border: 40px solid;
+    border-image-source: url("img/borderblock.png");
+    border-image-slice: 16 17 16 16;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat;
 }
+
+form div textarea {
+    width: 90%;
+    color: rgb(0, 89, 167);
+    border: 40px solid;
+    border-image-source: url("img/borderblock.png");
+    border-image-slice: 16 17 16 16;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat;
+}
+
+@media (max-width: 915px) {
+    input {
+        width: 100%;
+        font-size: 10px;
+    }
+}
+
+button {
+    background-color: rgb(0, 89, 167);
+    border: 40px solid;
+    border-image-source: url("img/borderblock.png");
+    border-image-slice: 16 17 16 16;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat;
+}
+
+button:hover {
+    background-color: azure;
+    color: rgb(0, 89, 167);
+    cursor: pointer;
+}
+
+
 
 
 

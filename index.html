@@ -24,17 +24,30 @@
         <div class="logo"></div>
     </header>
 
+    <audio id="audio" src="sound/coin.mp3"></audio>
+    <audio id="back-to" src="sound/backto.mp3"></audio>
+    <audio id="submit" src="sound/submit.mp3"></audio>
+    <audio id="select" src="sound/sound3.mp3"></audio>
+    <audio id="select-hab" src="sound/sound2.mp3"></audio>
+    <audio id="exit" src="sound/exit.mp3"></audio>
+
     <section>
         <div>
             <nav>
                 <ul>
-                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#historia">HISTORIA</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
-                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#trailer">TRAILER DEL JUEGO</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
-                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#personajes">PERSONAJES JUGABLES</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
-                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#bosses">BOSSES</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
-                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#habilidades">HABILIDADES</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
-                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#galeria">GALERIA</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
-                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#comentario">DEJA UN COMENTARIO</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
+                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#historia" onclick="document.getElementById('audio').play();">HISTORIA</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
+
+                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#trailer" onclick="document.getElementById('audio').play();">TRAILER DEL JUEGO</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
+
+                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#personajes" onclick="document.getElementById('audio').play();">PERSONAJES JUGABLES</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
+
+                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#bosses" onclick="document.getElementById('audio').play();">BOSSES</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
+
+                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#habilidades" onclick="document.getElementById('audio').play();">HABILIDADES</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
+
+                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#galeria" onclick="document.getElementById('audio').play();">GALERIA</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
+
+                    <li><img src="img/left-selector.png" width="10px" class="selector1"><a href="#comentario" onclick="document.getElementById('audio').play();">DEJA UN COMENTARIO</a><img src="img/rigth-selector.png" width="10px" class="selector2"></li>
                 </ul>
             </nav>
         </div>
@@ -115,7 +128,7 @@
     
             <div class="boton-vovler-inicio">
                 <img src="img/met-3.png" alt="" width="35px">
-                    <a href="#inicio" >VOLVER AL MENU</a>
+                    <a href="#inicio" onclick="document.getElementById('back-to').play();">VOLVER AL MENU</a>
                 <img src="img/met-4.png" alt="" width="30px">
             </div>
     
@@ -138,7 +151,7 @@
     
                 <div class="boton-vovler-inicio">
                     <img src="img/met-3.png" alt="" width="35px">
-                        <a href="#inicio">VOLVER AL MENU</a>
+                        <a href="#inicio" onclick="document.getElementById('back-to').play();">VOLVER AL MENU</a>
                     <img src="img/met-4.png" alt="" width="30px">
                 </div>
     
@@ -178,21 +191,23 @@
                     <p  class="bass-name">Bass</p>
                 </div>
                 
+
+
                 <div class="contenedor-personajes-responsive">
-                        <img src="img/megaicon.png" class="personajes-responsive" onclick="window.modal10.showModal();">
+                        <img src="img/megaicon.png" class="personajes-responsive" onclick="window.modal10.showModal(), document.getElementById('select').play();">
                         <dialog id="modal10">
                             <img src="img/Megaman-detalles.png" alt="Megaman">
-                            <p onclick="window.modal10.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal10.close(), document.getElementById('exit').play()" class="boton-cerrar">Cerrar</p>
                         </dialog>
-                        <img src="img/protoicon.png" class="personajes-responsive" onclick="window.modal11.showModal();">
+                        <img src="img/protoicon.png" class="personajes-responsive" onclick="window.modal11.showModal(),document.getElementById('select').play();">
                         <dialog id="modal11">
                             <img src="img/Protoman-detalles.png" alt="Protoman">
-                            <p onclick="window.modal11.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal11.close(),document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
-                        <img src="img/bassicon.png" class="personajes-responsive" onclick="window.modal12.showModal();">
+                        <img src="img/bassicon.png" class="personajes-responsive" onclick="window.modal12.showModal(),document.getElementById('select').play();">
                         <dialog id="modal12">
                             <img src="img/Bass-detalles.png" alt="Bass">
-                            <p onclick="window.modal12.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal12.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
                 </div>
             
@@ -200,7 +215,7 @@
             
             <div class="boton-vovler-inicio">
                 <img src="img/met-3.png" alt="" width="35px">
-                    <a href="#inicio">VOLVER AL MENU</a>
+                    <a href="#inicio" onclick="document.getElementById('back-to').play();">VOLVER AL MENU</a>
                 <img src="img/met-4.png" alt="" width="30px">
             </div>
     
@@ -223,56 +238,56 @@
     
                 <div class="bosses-container-size">
                     <div class="boss-size">
-                        <img src="img/01blademan.png" alt="Blademan" onclick="window.modal1.showModal();">
+                        <img src="img/01blademan.png" alt="Blademan" onclick="window.modal1.showModal(),document.getElementById('select').play();">
                         <dialog id="modal1">
                             <img src="img/Blademan.png" alt="Blademan">
-                            <p onclick="window.modal1.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal1.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
-                        <img src="img/02solarman.png" alt="Solarman" onclick="window.modal2.showModal();">
+                        <img src="img/02solarman.png" alt="Solarman" onclick="window.modal2.showModal(),document.getElementById('select').play();">
                         <dialog id="modal2">
                             <img src="img/Solarman.png" alt="Solarman">
-                            <p onclick="window.modal2.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal2.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
-                        <img src="img/03sheepman.png" alt="Sheepman" onclick="window.modal3.showModal();">
+                        <img src="img/03sheepman.png" alt="Sheepman" onclick="window.modal3.showModal(),document.getElementById('select').play();">
                         <dialog id="modal3">
                             <img src="img/Sheepman.png" alt="Sheepman">
-                            <p onclick="window.modal3.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal3.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
                     </div>
         
                     <div class="boss-size">
-                        <img src="img/04chillman.png" alt="Chillman" onclick="window.modal4.showModal();">
+                        <img src="img/04chillman.png" alt="Chillman" onclick="window.modal4.showModal(),document.getElementById('select').play();">
                         <dialog id="modal4">
                             <img src="img/Chillman.png" alt="Chillman">
-                            <p onclick="window.modal4.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal4.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
-                        <img src="img/05willy.png" alt="Dr Willy" onclick="window.modal5.showModal();">
+                        <img src="img/05willy.png" alt="Dr Willy" onclick="window.modal5.showModal(),document.getElementById('select').play();">
                         <dialog id="modal5">
                             <img src="img/DrWilly.png" alt="Dr Willy">
-                            <p onclick="window.modal5.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal5.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
-                        <img src="img/06commandoman.png" alt="Commandoman" onclick="window.modal6.showModal();">
+                        <img src="img/06commandoman.png" alt="Commandoman" onclick="window.modal6.showModal(),document.getElementById('select').play();">
                         <dialog id="modal6">
                             <img src="img/Commandoman.png" alt="Commandoman">
-                            <p onclick="window.modal6.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal6.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
                     </div>
         
                     <div class="boss-size">
-                        <img src="img/07nitroman.png" alt="Nitroman" onclick="window.modal7.showModal();">
+                        <img src="img/07nitroman.png" alt="Nitroman" onclick="window.modal7.showModal(),document.getElementById('select').play();">
                         <dialog id="modal7">
                             <img src="img/Nitroman.png" alt="Nitroman">
-                            <p onclick="window.modal7.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal7.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
-                        <img src="img/08strikeman.png" alt="Strikeman" onclick="window.modal8.showModal();">
+                        <img src="img/08strikeman.png" alt="Strikeman" onclick="window.modal8.showModal(),document.getElementById('select').play();">
                         <dialog id="modal8">
                             <img src="img/Strikeman.png" alt="Strikeman">
-                            <p onclick="window.modal8.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal8.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
-                        <img src="img/09pumpman.png" alt="Pumpman" onclick="window.modal9.showModal();">
+                        <img src="img/09pumpman.png" alt="Pumpman" onclick="window.modal9.showModal(),document.getElementById('select').play();">
                         <dialog id="modal9">
                             <img src="img/Pumpman.png" alt="Pumpman">
-                            <p onclick="window.modal9.close();" class="boton-cerrar">Cerrar</p>
+                            <p onclick="window.modal9.close(), document.getElementById('exit').play();" class="boton-cerrar">Cerrar</p>
                         </dialog>
                     </div>
     
@@ -280,7 +295,7 @@
     
                     <div class="boton-vovler-inicio">
                         <img src="img/met-3.png" alt="" width="35px">
-                            <a href="#inicio">VOLVER AL MENU</a>
+                            <a href="#inicio" onclick="document.getElementById('back-to').play();">VOLVER AL MENU</a>
                         <img src="img/met-4.png" alt="" width="30px">
                     </div>
                 </fieldset>    
@@ -328,7 +343,7 @@
     
                 <div class="boton-vovler-inicio">
                     <img src="img/met-3.png" alt="" width="35px">
-                        <a href="#inicio">VOLVER AL MENU</a>
+                        <a href="#inicio" onclick="document.getElementById('back-to').play();">VOLVER AL MENU</a>
                     <img src="img/met-4.png" alt="" width="30px">
                 </div>
     
@@ -337,8 +352,6 @@
         </div>
 
     </section>
-
-    
 
     <hr>
 
@@ -370,7 +383,7 @@
     
                 <div class="boton-vovler-inicio">
                     <img src="img/met-3.png" alt="" width="35px">
-                        <a href="#inicio">VOLVER AL MENU</a>
+                        <a href="#inicio" onclick="document.getElementById('back-to').play();">VOLVER AL MENU</a>
                     <img src="img/met-4.png" alt="" width="30px">
                 </div>
     
@@ -393,27 +406,38 @@
 
                 <form action="">
                     <div>
+                        <br>
                         <label for="nombre" class="label">Ingresa tu nombre:</label>
                         <br>
-                        <input type="text">
+                        <input type="text" placeholder="nombre y apellido">
                     </div>
 
                     <div>
+                        <br>
                         <label for="edad">Ingresa tu edad:</label>
                         <br>
-                        <input type="number">
+                        <input type="number" placeholder="edad">
                     </div>
 
                     <div>
+                        <br>
                         <label for="mail">Ingresa tu mail:</label>
                         <br>
-                        <input type="email">
+                        <input type="email" placeholder="e-mail">
                     </div>
 
                     <div>
+                        <br>
                         <label for="mail">Jugaste Megaman 10? Comentanos:</label>
                         <br>
+                        <br>
+                        <textarea name="textarea" rows="10" cols="50" placeholder="Escribi tu comentario"></textarea>
                     <div>
+                        <br>
+                        <button onclick="document.getElementById('submit').play();">Enviar mensaje</button>
+                    <div>
+                        
+                    </div>
                 </form>
                 
 
@@ -421,7 +445,7 @@
     
                 <div class="boton-vovler-inicio">
                     <img src="img/met-3.png" alt="" width="35px">
-                        <a href="#inicio">VOLVER AL MENU</a>
+                        <a href="#inicio" onclick="document.getElementById('back-to').play();">VOLVER AL MENU</a>
                     <img src="img/met-4.png" alt="" width="30px">
                 </div>
     
@@ -436,7 +460,6 @@
     <hr>
 
     <footer>
-
 
 
     </footer>
